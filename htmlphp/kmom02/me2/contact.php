@@ -12,7 +12,7 @@ include("incl/header.php");
         <header>
             <h3>Fill the form below to get to me</h3>
         </header>
-        <form>
+        <form name="contact-form" id="contact-form">
             <fieldset>
                 <legend>Contact me!</legend>
                 <label for="name">Your name: </label>
@@ -27,6 +27,11 @@ include("incl/header.php");
                 </select>
                 <label for="message">Your message: </label>
                 <textarea id="message"></textarea>
+                <p id="clear-submit">
+                    <input type="button" value="Reset" id="btn-reset">
+                    <input type="button" value="Submit" id="btn-submit">
+                    <span id="not-action"></span>
+                </p>
             </fieldset>
         </form>
         <footer>

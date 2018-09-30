@@ -432,7 +432,8 @@ echo $dbwebb->assertEqual("4.3", $ANSWER, false);
 $countries = explode(", ", "Sweden, Brazil, China, Australia, Canada");
 
 
-function getContinent(string $country): string {
+function getContinent(string $country): string
+{
     switch ($country) {
         case "Sweden":
             return "Europe";
@@ -477,7 +478,8 @@ echo $dbwebb->assertEqual("5.1", $ANSWER, false);
  * Write your code below and put the answer into the variable ANSWER.
  */
 
-function getContinentMultiCase(string $country): string {
+function getContinentMultiCase(string $country): string
+{
     switch ($country) {
         case "Sweden":
         case "Denmark":
